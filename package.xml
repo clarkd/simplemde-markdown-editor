@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+  <file>
+      <guid>package.manifest</guid>
+      <orgPath>/App_Plugins/simplemde-markdown-editor</orgPath>
+      <orgName>package.manifest</orgName>
+    </file>
+    <file>
+      <guid>simplemde.controller.js</guid>
+      <orgPath>/App_Plugins/simplemde-markdown-editor</orgPath>
+      <orgName>simplemde.controller.js</orgName>
+    </file>
+    <file>
+      <guid>simplemde.html</guid>
+      <orgPath>/App_Plugins/simplemde-markdown-editor</orgPath>
+      <orgName>simplemde.html</orgName>
+    </file>
+    <file>
+      <guid>simplemde.min.css</guid>
+      <orgPath>/App_Plugins/simplemde-markdown-editor/lib</orgPath>
+      <orgName>simplemde.min.css</orgName>
+    </file>
+    <file>
+      <guid>simplemde.min.js</guid>
+      <orgPath>/App_Plugins/simplemde-markdown-editor/lib</orgPath>
+      <orgName>simplemde.min.js</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>simplemde-markdown-editor</name>
+      <version>0.1</version>
+      <iconUrl />
+      <license url="http://opensource.org/licenses/MIT">MIT License</license>
+      <url>https://squaredup.com</url>
+      <requirements type="strict">
+        <major>7</major>
+        <minor>6</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Dave Clarke</name>
+      <website>https://daveclarke.me</website>
+    </author>
+    <readme><![CDATA[To get started, install the package and create a document type with a SimpleMDE Markdown Editor property. Built with Umbraco 7.6.]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+</umbPackage>

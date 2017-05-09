@@ -1,0 +1,15 @@
+{
+    propertyEditors: [
+        {
+            name: "SimpleMDE Markdown Editor",
+            alias: "squp.simplemdeeditor",
+            editor: {
+                view: "~/app_plugins/simplemde-markdown-editor/simplemde.html"
+            }
+        }
+    ],
+
+    javascript: [
+        "~/app_plugins/simplemde-markdown-editor/simplemde.controller.js"
+    ]
+}
