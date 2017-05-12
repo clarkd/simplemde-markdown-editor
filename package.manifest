@@ -4,7 +4,8 @@
             name: "SimpleMDE Markdown Editor",
             alias: "squp.simplemdeeditor",
             editor: {
-                view: "~/app_plugins/simplemde-markdown-editor/simplemde.html"
+                view: "~/app_plugins/simplemde-markdown-editor/simplemde.html",
+				valueType: "TEXT"
             }
         }
     ],

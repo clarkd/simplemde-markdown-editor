@@ -10,6 +10,13 @@ The image upload functionality is hooked into Umbraco's media picker so you can 
 * Add a new property using the _SimpleMDE Markdown Editor_
 * All done!
 
+## Release Notes
+### 0.2
+* Fix truncation when stored in DB
+* Fix cursor moving back to 0,0 when using toolbar
+### 0.1
+* Initial Release
+
 ## Authors
 * [**Dave Clarke**](https://daveclarke.me)
 

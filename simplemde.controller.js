@@ -8,7 +8,10 @@ app.controller("squp.simplemdecontroller", function ($scope, $log, $timeout, ass
     assetsService.load(["/app_plugins/simplemde-markdown-editor/lib/simplemde.min.js"]).then(function () {
         var input = $("#editor_" + $scope.model.alias + " textarea");
 
-		var editor = new SimpleMDE({element: input[0], toolbar: [
+        var editor = new SimpleMDE({
+            element: input[0],
+            initialValue: $scope.model.value,
+            toolbar: [
 			{
 				name: "bold",
 				action: SimpleMDE.toggleBold,
@@ -136,7 +139,7 @@ app.controller("squp.simplemdecontroller", function ($scope, $log, $timeout, ass
 				className: "fa fa-eye no-disable",
 				title: "Toggle Preview",
 				default: true
-			},
+			}
 
 		]});
 		
@@ -144,13 +147,10 @@ app.controller("squp.simplemdecontroller", function ($scope, $log, $timeout, ass
 			editor.codemirror.refresh();           
         });
 
-		editor.codemirror.on("change", function (args) {
-			$scope.model.value = editor.value();
+        editor.codemirror.on("change", function () {
+            $scope.model.value = editor.value();
 		});
-		
-		$scope.$watch('model.value', function() {
-			editor.value($scope.model.value);
-		});
+
     });
 
     /**
