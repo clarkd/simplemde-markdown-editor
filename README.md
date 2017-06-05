@@ -11,6 +11,8 @@ The image upload functionality is hooked into Umbraco's media picker so you can 
 * All done!
 
 ## Release Notes
+### 0.3
+* Added ability to add links to Umbraco content nodes using the Content Picker
 ### 0.2
 * Fix truncation when stored in DB
 * Fix cursor moving back to 0,0 when using toolbar
